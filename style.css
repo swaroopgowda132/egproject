@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f0c29;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section with Gradient */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.logo { font-size: 1.5rem; font-weight: 600; color: #00d2ff; }
+
+nav ul { display: flex; list-style: none; }
+nav ul li { margin-left: 30px; }
+nav ul li a { text-decoration: none; color: white; transition: 0.3s; }
+nav ul li a:hover { color: #00d2ff; }
+
+.hero-content {
+    text-align: center;
+    margin-top: 15vh;
+    max-width: 800px;
+}
+
+.hero-content h1 { font-size: 4rem; margin-bottom: 20px; }
+.hero-content p { font-size: 1.2rem; color: #ccc; margin-bottom: 40px; }
+
+.cta-btn {
+    padding: 15px 40px;
+    background: #00d2ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.cta-btn:hover { background: #3a7bd5; transform: scale(1.05); }
+
+/* Feature Cards Section */
+.features { padding: 100px 50px; text-align: center; }
+.section-title h2 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    transition: 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-10px);
+    border-color: #00d2ff;
+}
+
+.icon { font-size: 3rem; margin-bottom: 15px; }
+
+/* Form Section (Glassmorphism) */
+.predictor-section { padding: 100px 0; display: flex; justify-content: center; }
+
+.glass-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    width: 500px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-group { margin-bottom: 20px; }
+.input-group label { display: block; margin-bottom: 10px; }
+.input-group input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #00d2ff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+footer { padding: 50px; text-align: center; font-size: 0.9rem; color: #777; }
